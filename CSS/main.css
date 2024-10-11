@@ -1,0 +1,330 @@
+@font-face {
+    font-family: snectar;
+    src: url(../fonts/Deutsch.ttf);
+}
+
+html {
+    
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "snectar";
+    font-size: 4em;
+    margin: 0;
+
+}
+
+h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.page1 {
+    width: 100vw;
+    width: fit-content;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(59, 58, 90);
+  /**  background-image: url(./background.gif);
+    background-blend-mode:soft-light;
+    background-size: cover; */
+}
+
+#instagram {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    transition: all 0.2s ease;
+ 
+}
+
+#instagram:hover {
+    transform: scale(1.1);
+}
+
+#topInspector {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    
+
+    
+
+    transition: all .2s ease;
+}
+
+#topInspector:hover {
+  
+    transform: scale(1.2);
+
+
+}
+
+.headers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(203, 203, 203);
+    position: relative;
+    top: 10px;
+    background-color: rgb(203, 203, 203);
+    width: 40%;
+    height: 20%;
+    border: solid 5px;
+    border-radius: 0;
+    padding: 30px;
+    border-style:ridge;
+    text-align: center;
+    /*box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;*/
+    background-image: url(../img/mainPageHeader.gif);
+    background-size: cover;
+    
+}
+
+.headers h1 {
+    font-size: 7em;
+}
+
+.headers h3 {
+    font-size: 1.5em;
+    background:black;
+
+}
+
+/*---------------- NAV BAR ----------------------------------------------------------------------------------------------*/
+/*---------------- NAV BAR ----------------------------------------------------------------------------------------------*/
+/*---------------- NAV BAR ----------------------------------------------------------------------------------------------*/
+/*---------------- NAV BAR ----------------------------------------------------------------------------------------------*/
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    width: 100vw;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#navBtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgb(128, 128, 128);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border: solid black;
+    border-width: 5px;
+    border-style: double;
+    border-radius: 10px;
+    box-sizing: border-box;
+   
+    transition: all 0.2s ease;
+}
+
+#navBtn:hover {
+    transform: scale(1.1);
+  
+    border-color: white;
+    
+}
+
+.home:hover {
+    background-image: url(../img/homeBtn.webp);
+    color: rgba(255, 255, 255, 0);
+    background-size: cover;
+
+}
+
+.merch:hover {
+    background-image: url(../img/merch.jpg);
+    color: rgba(255, 255, 255, 0);
+    background-size: cover;
+}
+
+.tour:hover {
+    background-image: url(../img/tour.jpeg);
+    color: rgba(255, 255, 255, 0);
+    background-size: cover;
+    
+
+}
+
+.contact:hover {
+    background-image: url(../img/contact.jpg);
+    color: rgba(240, 248, 255, 0);
+    background-size: cover;
+}
+
+.music:hover {
+    background-image: url(../img/music.jpg);
+    background-size: cover;
+    color: rgba(240, 248, 255, 0);
+}
+
+
+/* ---------------PAGE 1----------------------*/
+
+.textArea{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+    width: 80vw;
+    height: 40vh;
+    background-color: rgb(203, 203, 203);
+    padding: 5px;
+}
+
+
+
+.textArea h3 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.endQuote {
+    bottom: 2px;
+    left: 100px;
+    background-color: white;
+    width: 40%;
+    border: solid red;
+    border-width: 5px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+/* blog link */
+#blogScroll {
+    position:absolute;
+    left: 1px;
+    bottom: 5px;
+    color: rgb(0, 0, 0);
+    background: rgba(203, 203, 203, 0.407);
+    border-radius: 20px;;
+    padding: 10px;
+
+    transition: all .5s ease;
+}
+
+#blogScroll:hover {
+    background-color: rgb(203, 203, 203);
+    transform: scale(1.1)
+}
+
+.pageDivider {
+    width: 100vw;
+    height: 25vh;
+    background-color: rgb(59, 58, 90);
+    
+}
+
+
+/* ------------------------- BLOG SECTION----------------------------------*/
+
+.blogSection {
+    background-color: rgb(59, 58, 90);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100vw;
+    height: fit-content;
+}
+
+.blogHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    width:50%;
+    height: 20%;
+    padding: 0px;
+    margin: 0;
+    background-color: rgb(203, 203, 203);
+}
+
+.blogHeader h2 {
+    
+    text-align: center;
+    background-color: rgba(203, 203, 203, 0);
+    width: fit-content;
+    padding: 0;
+    border-radius: 50px;
+    font-size: 2em;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.blogHeader p {
+    background-color:rgba(203, 203, 203, 0);
+    text-align: left;
+    padding: 10px;
+}
+
+.blogEntry {
+    display: flex;
+    flex-direction: column;
+    
+    width: 80vw;
+    height: fit-content;
+    padding: 20px;
+    background-color:rgb(203, 203, 203) ;
+    margin-bottom: 50px;
+}
+
+
+#older {
+    height: 0;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0);
+    position: sticky;
+    top: 0;
+    left: 100px;
+}
+
+
+.blogEntry img {
+   width: 100%;
+}
+
+
+.footer {
+    width: 100fw;
+    background-color: black;
+    height: 20vh;
+}
+
+#pattyPortrait {
+    position: absolute;
+    top: 10px;
+    left: 85px;
+}

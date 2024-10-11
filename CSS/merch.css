@@ -1,0 +1,228 @@
+@font-face {
+    font-family: snectar;
+    src: url(../fonts/Deutsch.ttf);
+}
+
+html {
+    
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(59, 58, 90);
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+  
+}
+
+h1 {
+    font-family: "snectar";
+    font-size: 4em;
+    margin: 0;
+
+}
+
+h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.page1 {
+   
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(59, 58, 90);
+  /**  background-image: url(./background.gif);
+    background-blend-mode:soft-light;
+    background-size: cover; */
+}
+
+
+
+#instagram {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    transition: all 0.2s ease;
+ 
+}
+
+#instagram:hover {
+    transform: scale(1.1);
+}
+
+#topInspector {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    
+
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+
+    transition: all .2s ease;
+}
+
+#topInspector:hover {
+  
+    transform: scale(1.2);
+
+
+}
+
+.headers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(203, 203, 203);
+    position: relative;
+    top: 10px;
+    background-color: rgba(10, 75, 0, 0.552);
+    width: 40%;
+    height: 20%;
+    border: solid 5px;
+    border-radius: 0;
+    padding: 30px;
+    border-style:ridge;
+    text-align: center;
+    /*box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;*/
+    background-image: url(../img/merchPageHeader.gif);
+    background-blend-mode: screen;
+    background-size: contain;
+    
+}
+
+.headers h1 {
+    font-size: 7em;
+}
+
+.headers h3 {
+    font-size: 1.5em;
+    background:rgba(0, 0, 0, 0);
+
+}
+
+/*---------------- NAV BAR ----------------------------------------------------------------------------------------------*/
+/*---------------- NAV BAR ----------------------------------------------------------------------------------------------*/
+/*---------------- NAV BAR ----------------------------------------------------------------------------------------------*/
+/*---------------- NAV BAR ----------------------------------------------------------------------------------------------*/
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+    width: 100vw;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#navBtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgb(128, 128, 128);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border: solid black;
+    border-width: 5px;
+    border-style: double;
+    border-radius: 10px;
+    box-sizing: border-box;
+   
+    transition: all 0.2s ease;
+}
+
+#navBtn:hover {
+    transform: scale(1.1);
+  
+    border-color: white;
+    
+}
+
+.home:hover {
+    background-image: url(../img/homeBtn.webp);
+    color: rgba(255, 255, 255, 0);
+    background-size: cover;
+}
+
+.merch:hover {
+    background-image: url(../img/merch.jpg);
+    color: rgba(255, 255, 255, 0);
+    background-size: cover;
+}
+
+.tour:hover {
+    background-image: url(../img/tour.jpeg);
+    color: rgba(255, 255, 255, 0);
+    background-size: cover;
+    
+
+}
+
+.contact:hover {
+    background-image: url(../img/contact.jpg);
+    color: rgba(240, 248, 255, 0);
+    background-size: cover;
+}
+
+.music:hover {
+    background-image: url(../img/music.jpg);
+    background-size: cover;
+    color: rgba(240, 248, 255, 0);
+}
+
+/* PAGE */
+
+
+.merchContainer {
+    display: flex;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: grey;
+
+}
+
+
+
+.item1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100vw;
+    height: fit-content;
+    background-color: grey;
+
+    
+}
+.item1 img {
+  
+    border: solid black;
+    border-width: 5px;
+    margin-left: 100px;
+}
+
+#merchID {
+    position: relative; 
+    top: 100px;
+}
